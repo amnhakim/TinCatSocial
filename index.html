@@ -62,7 +62,7 @@
             <button type="button" class="btn btn-outline-light btn-lg btn-download"><i class="fa-brands fa-android"></i>Download</button>
           </div>
 
-          <div class="col-lg-6">
+          <div class="col-lg-6 iphone5">
             <img class="header-images" src="images/iphone5.png" alt="iphone-mockup" />
           </div>
         </div>
@@ -72,52 +72,87 @@
     <!-- Features -->
 
     <section class="features" id="features">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-4 col-md-6">
-            <i class="fa fa-sharp fa-solid fa-circle-check"></i>
-            <h3>Easy to use.</h3>
-            <p>So easy to use, even your cat could do it.</p>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <i class="fa fa-solid fa-fire"></i>
-            <h3>Elite Clientele</h3>
-            <p>We have all the cats, the greatest cats.</p>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <i class="fa fa-solid fa-heart"></i>
-            <h3>Guaranteed to work.</h3>
-            <p>Find the love of your cat's life or your money back.</p>
-          </div>
+      <div class="row">
+        <div class="feature-box col-lg-4">
+          <i class="icon fa fa-sharp fa-solid fa-circle-check fa-4x"></i>
+          <h3>Easy to use.</h3>
+          <p>So easy to use, even your cat could do it.</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="icon fa fa-solid fa-fire fa-4x"></i>
+          <h3>Elite Clientele.</h3>
+          <p>We have all the cats, the greatest cats.</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="icon fa fa-solid fa-heart fa-4x"></i>
+          <h3>Guaranteed to work.</h3>
+          <p>Find the love of your cat's life or your money back.</p>
         </div>
       </div>
+      <!-- <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <i class="fa fa-sharp fa-solid fa-circle-check"></i>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <i class="fa fa-solid fa-fire"></i>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <i class="fa fa-solid fa-heart"></i>
+        </div>
+      </div> -->
     </section>
 
     <!-- Testimonials -->
 
     <section class="testimonials" id="testimonials">
-      <div id="testimonial-carousel" class="carousel slide" data-bs-ride="carousel">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active container-fluid">
+            <h2>"I no longer have to sniff other cats for love. I've found the hottest Corgi on Tincat. Woof."</h2>
+            <img class="testimonial-image" src="images/cat-img-(2).png" class="d-block w-100" alt="cat image" />
+            <em>Oyen, Banting, Malaysia</em>
+          </div>
+          <div class="carousel-item container-fluid">
+            <h2 class="testimonial-text">"My cat used to be so lonely, but with Tincat's help, they've found the love of their life. I think."</h2>
+            <img class="testimonial-image" src="images/aiman.png" class="d-block w-100" alt="aiman" />
+            <em>Aiman, Republic of Korea</em>
+          </div>
+          <div class="carousel-item container-fluid">
+            <h2 class="testimonial-text">"When I suggest apps to my cat get catwomen friend. And now I think their going marry"</h2>
+            <img class="testimonial-image" src="images/izzatul.png" class="d-block w-100" alt="izzatul" />
+            <em>Izzatul, North of Korea</em>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+
+      <!--       
+      <div id="testimonial-carousel" class="carousel slide" data-bs-ride="false">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <h2>"I no longer have to sniff other cats for love. I've found the hottest Corgi on Tincat. Woof."</h2>
             <div class="test-img">
-              <img src="images/cat-img-(2).png" alt="cat-profile" />
+              <img class="testimonial-image" src="images/cat-img-(2).png" alt="cat-profile" />
               <p>Pebbles, Banting, Malaysia</p>
-            </div>
           </div>
           <div class="carousel-item">
             <h2 class="testimonial-text">"My cat used to be so lonely, but with Tincat's help, they've found the love of their life. I think."</h2>
             <div class="test-img">
-              <img src="images/aiman.png" alt="lady-profile" />
+              <img class="testimonial-image" src="images/aiman.png" alt="lady-profile" />
               <p>Aiman, Republic of Korea</p>
-            </div>
           </div>
           <div class="carousel-item">
             <h2 class="testimonial-text">"My cat used to be so lonely, but with Tincat's help, they've found the love of their life. I think."</h2>
             <div class="test-img">
-              <img src="images/izzatul.png" alt="lady-profile" />
+              <img class="testimonial-image" src="images/izzatul.png" alt="lady-profile" />
               <p>Izzatul, Republic of Korea</p>
-            </div>
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="prev">
@@ -126,16 +161,16 @@
         <button class="carousel-control-next" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
         </button>
-      </div>
+      </div> -->
     </section>
 
     <!-- Press -->
 
     <section class="press" id="press">
-      <img src="images/TechCrunch.png" alt="tc-logo" />
-      <img src="images/tnw.png" alt="tnw-logo" />
-      <img src="images/bizinsider.png" alt="biz-insider-logo" />
-      <img src="images/mashable.png" alt="mashable-logo" />
+      <img class="press-logo" src="images/techcrunch.png" alt="tc-logo" />
+      <img class="press-logo" src="images/tnw.png" alt="tnw-logo" />
+      <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo" />
+      <img class="press-logo" src="images/mashable.png" alt="mashable-logo" />
     </section>
 
     <!-- Pricing -->
@@ -207,7 +242,7 @@
 
     <footer id="footer">
       <div class="center">
-        <p>© Copyright TinCat</p>
+        <p>Copyright © TinCat 2022</p>
       </div>
       <div class="icon-center">
         <a href=""><i class="fa-brands fa-twitter"></i></a>
