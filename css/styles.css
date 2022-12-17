@@ -25,7 +25,7 @@ h2 {
 }
 
 .container-fluid {
-  padding: 3% 15%;
+  padding: 3% 15% 7%;
 }
 
 h1 {
@@ -37,10 +37,18 @@ h1 {
 
 h2 {
   font-family: "Montserrat";
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+h3 {
+  font-family: "Montserrat";
   font-weight: 900;
   line-height: 1.5;
-  font-size: 2rem;
-  color: #fff;
+}
+
+p {
+  color: #8f8f8f;
 }
 
 .header-images {
@@ -68,7 +76,7 @@ h2 {
   color: #fff;
 }
 
-/* Download Button */
+/* Header Section*/
 
 .btn-download {
   margin: 5% 3% 5% 0;
@@ -78,75 +86,69 @@ h2 {
   margin-right: 5px;
 }
 
+.header-images {
+  width: 20%;
+  transform: rotate(25deg);
+  position: absolute;
+  z-index: 1;
+}
+
 /* Features */
 .features {
+  padding: 7% 15%;
+  background-color: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.feature-box {
   text-align: center;
-  padding: 10% 15%;
+  padding: 4.5%;
 }
 
-.features h3 {
-  font-weight: bold;
+.icon {
+  color: #ef8172;
+  margin-bottom: 1rem;
 }
 
-.features p {
-  color: #8f8f8f;
-}
-
-.fa {
-  text-align: center;
-  color: rgb(229, 96, 96);
-  font-size: 4rem;
-  line-height: 1.8;
-}
-
-.fa:hover {
-  color: rgb(242, 53, 53);
+.icon:hover {
+  color: #ff4c68;
 }
 
 /* Testimonials Section */
 
 .testimonials {
-  background-color: rgb(229, 96, 96);
-  padding: 7% 15% 6%;
+  background-color: #ef8172;
   text-align: center;
   color: #fff;
 }
 
-.testimonials h2 {
-  font-size: 2.5rem;
+.testimonial-image {
+  width: 10%;
+  border-radius: 50%;
 }
 
-.test-img {
-  padding: 5%;
-  margin-left: auto;
-  text-align: center;
-}
-
-.testimonials p {
-  font-size: 1.3rem;
-}
-
-.testimonials img {
-  width: 30%;
-  margin: 20px auto;
+.testimonials p,
+em {
+  color: #fff;
+  padding-left: 1.5rem;
 }
 
 .carousel-item {
-  padding: 4% 25%;
+  padding: 7% 15%;
 }
 
 /* Press Section */
 
 .press {
-  background-color: rgb(229, 96, 96);
+  background-color: #ef8172;
   text-align: center;
   padding-bottom: 3%;
-  margin-top: -2%;
 }
 
-.press img {
-  width: 12%;
-  margin: 40px 20px 50px;
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
 }
 
 /* Pricing Section */
@@ -193,6 +195,7 @@ footer {
 
 footer p {
   margin-bottom: -10px;
+  color: #fff;
 }
 
 .center {
@@ -211,39 +214,31 @@ footer p {
   color: #fff;
 }
 
-/* Responsive */
-/* Tab Size */
-@media screen and (max-width: 980px) {
-  .header img {
-    width: 40%;
-    position: relative;
-    left: 30%;
-    padding-bottom: 5%;
+/* Responsive Breakpoints */
+
+@media screen and (max-width: 1300px) {
+  .carousel-item h2 {
+    font-size: 1.7rem;
   }
 }
 
-@media screen and (max-width: 775px) {
-  .header img {
-    width: 50%;
-    position: relative;
-    left: 30%;
-  }
-
-  .testimonials h2 {
-    font-size: 1.3rem;
-  }
-
-  .test-img img {
-    width: 50%;
-  }
-
-  .icon-center {
-    background-color: rgb(229, 96, 96);
-    margin-top: -7%;
-  }
-  footer {
-    background-color: rgb(229, 96, 96);
+@media screen and (max-width: 990px) {
+  #title {
     text-align: center;
-    height: 180px;
+  }
+
+  .header-images {
+    width: 50%;
+    position: static;
+    transform: rotate(0deg);
+    text-align: center;
+  }
+}
+
+@media (min-width: 990px) and (max-width: 1152px) {
+  .header-images {
+    width: 30%;
+    padding-left: 5%;
+    transform: rotate(0deg);
   }
 }
